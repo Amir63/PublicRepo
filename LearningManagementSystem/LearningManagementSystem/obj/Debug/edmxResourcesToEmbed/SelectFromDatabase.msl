@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SelectFromDatabaseModelStoreContainer" CdmEntityContainer="SelectFromDatabaseEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="SubjectAreaID" ColumnName="SubjectAreaID" />
+          <ScalarProperty Name="GradeLevelID" ColumnName="GradeLevelID" />
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsArchived" ColumnName="IsArchived" />
+          <ScalarProperty Name="CourseDescription" ColumnName="CourseDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseAssignments">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.CourseAssignment">
+        <MappingFragment StoreEntitySet="CourseAssignment">
+          <ScalarProperty Name="CourseAssignmentID" ColumnName="CourseAssignmentID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PossiblePoints" ColumnName="PossiblePoints" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="AssignmentDescription" ColumnName="AssignmentDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseAssignmentRosters">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.CourseAssignmentRoster">
+        <MappingFragment StoreEntitySet="CourseAssignmentRoster">
+          <ScalarProperty Name="CourseAssignmentRosterID" ColumnName="CourseAssignmentRosterID" />
+          <ScalarProperty Name="CourseAssignmentID" ColumnName="CourseAssignmentID" />
+          <ScalarProperty Name="CourseRosterID" ColumnName="CourseRosterID" />
+          <ScalarProperty Name="PointsEarned" ColumnName="PointsEarned" />
+          <ScalarProperty Name="GradePercent" ColumnName="GradePercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseRosters">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.CourseRoster">
+        <MappingFragment StoreEntitySet="CourseRoster">
+          <ScalarProperty Name="CourseRosterID" ColumnName="CourseRosterID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="GradePercent" ColumnName="GradePercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GradeLevels">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.GradeLevel">
+        <MappingFragment StoreEntitySet="GradeLevel">
+          <ScalarProperty Name="GradeLevelID" ColumnName="GradeLevelID" />
+          <ScalarProperty Name="GradeLevelShort" ColumnName="GradeLevelShort" />
+          <ScalarProperty Name="GradeLevelLong" ColumnName="GradeLevelLong" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestedRoles">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.RequestedRole">
+        <MappingFragment StoreEntitySet="RequestedRoles">
+          <ScalarProperty Name="RequestedRoleID" ColumnName="RequestedRoleID" />
+          <ScalarProperty Name="RequestedRoleName" ColumnName="RequestedRoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectAreas">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.SubjectArea">
+        <MappingFragment StoreEntitySet="SubjectArea">
+          <ScalarProperty Name="SubjectAreaID" ColumnName="SubjectAreaID" />
+          <ScalarProperty Name="SubjectAreaName" ColumnName="SubjectAreaName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="SelectFromDatabaseModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="RequestedRoleID" ColumnName="RequestedRoleID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="SelectFromDatabaseModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ParentStudent" TypeName="SelectFromDatabaseModel.ParentStudent" StoreEntitySet="ParentStudent">
+      <EndProperty Name="UserInfo">
+        <ScalarProperty Name="UserInfoID" ColumnName="ParentID" />
+      </EndProperty>
+      <EndProperty Name="UserInfo1">
+        <ScalarProperty Name="UserInfoID" ColumnName="StudentID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

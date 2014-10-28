@@ -1,0 +1,11 @@
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.UI.exe.config
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\Contacts.txt
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.UI.exe
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.UI.pdb
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.Data.dll
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.Models.dll
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.Data.pdb
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\bin\Debug\AddressBook.Models.pdb
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\obj\Debug\AddressBook.UI.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\obj\Debug\AddressBook.UI.exe
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.UI\obj\Debug\AddressBook.UI.pdb

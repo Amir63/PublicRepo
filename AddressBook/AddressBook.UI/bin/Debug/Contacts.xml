@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfContact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contact>
+    <FirstName>AddressTestName</FirstName>
+    <LastName />
+    <Salutation />
+    <PhoneNumber>
+      <PhoneNumber>
+        <Type>Other</Type>
+        <CountryCode />
+        <Number />
+        <Extension />
+      </PhoneNumber>
+      <PhoneNumber>
+        <Type>Work</Type>
+        <CountryCode>3242</CountryCode>
+        <Number>23423423</Number>
+        <Extension>x4534</Extension>
+      </PhoneNumber>
+    </PhoneNumber>
+    <Address>
+      <Address>
+        <Street1>6030 sE Bluestem</Street1>
+        <Street2>afd</Street2>
+        <City>Lakin</City>
+        <State>KS</State>
+        <Zip>67074</Zip>
+        <Country>USA</Country>
+        <County>Sedgwick</County>
+        <Type>Home</Type>
+      </Address>
+      <Address>
+        <Street1>work address</Street1>
+        <Street2>work address 2</Street2>
+        <City>work city</City>
+        <State>ks</State>
+        <Zip>worer</Zip>
+        <Country>af</Country>
+        <County>asdfa</County>
+        <Type>Work</Type>
+      </Address>
+    </Address>
+    <Email>
+      <Email>
+        <Type />
+        <EmailAddress />
+      </Email>
+    </Email>
+    <WebSite />
+    <Notes />
+    <Id>15</Id>
+  </Contact>
+  <Contact>
+    <FirstName>test5</FirstName>
+    <LastName />
+    <Salutation />
+    <PhoneNumber>
+      <PhoneNumber>
+        <Type>Other</Type>
+        <CountryCode />
+        <Number />
+        <Extension />
+      </PhoneNumber>
+    </PhoneNumber>
+    <Address>
+      <Address>
+        <Street1 />
+        <Street2 />
+        <City />
+        <State />
+        <Zip />
+        <Country />
+        <County />
+        <Type />
+      </Address>
+    </Address>
+    <Email>
+      <Email>
+        <Type>Work</Type>
+        <EmailAddress>test.com</EmailAddress>
+      </Email>
+      <Email>
+        <Type>Work</Type>
+        <EmailAddress>test3.com</EmailAddress>
+      </Email>
+    </Email>
+    <WebSite />
+    <Notes />
+    <Id>16</Id>
+  </Contact>
+  <Contact>
+    <FirstName>Amir</FirstName>
+    <LastName>Gill</LastName>
+    <Salutation />
+    <PhoneNumber>
+      <PhoneNumber>
+        <Type>Mobile</Type>
+        <CountryCode>3</CountryCode>
+        <Number>2342</Number>
+        <Extension>34</Extension>
+      </PhoneNumber>
+      <PhoneNumber>
+        <Type>Mobile</Type>
+        <CountryCode>1</CountryCode>
+        <Number>2342352</Number>
+        <Extension>34</Extension>
+      </PhoneNumber>
+    </PhoneNumber>
+    <Address>
+      <Address>
+        <Street1>123 fake street</Street1>
+        <Street2>cleveland</Street2>
+        <City>cleveland</City>
+        <State>oh</State>
+        <Zip>1234</Zip>
+        <Country />
+        <County />
+        <Type>work</Type>
+      </Address>
+      <Address>
+        <Street1>test</Street1>
+        <Street2 />
+        <City />
+        <State />
+        <Zip />
+        <Country />
+        <County />
+        <Type>work</Type>
+      </Address>
+    </Address>
+    <Email>
+      <Email>
+        <Type>amy</Type>
+        <EmailAddress>another address</EmailAddress>
+      </Email>
+      <Email>
+        <Type>work</Type>
+        <EmailAddress>real test</EmailAddress>
+      </Email>
+      <Email>
+        <Type>home</Type>
+        <EmailAddress>another test</EmailAddress>
+      </Email>
+      <Email>
+        <Type>another</Type>
+        <EmailAddress>test3</EmailAddress>
+      </Email>
+      <Email>
+        <Type>fake</Type>
+        <EmailAddress>test4</EmailAddress>
+      </Email>
+      <Email>
+        <Type>home</Type>
+        <EmailAddress>test3</EmailAddress>
+      </Email>
+    </Email>
+    <WebSite />
+    <Notes />
+    <Id>17</Id>
+  </Contact>
+</ArrayOfContact>

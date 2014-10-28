@@ -1,0 +1,185 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div ng-app="unassignedUsersModule">
+    <div class="row">
+        <div class="col-xs-12" ng-controller="loadUnassignedUsersController">
+            <button class="btn btn-primary" ng-click="searchForUsers()">Search for Users</button>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>Email</th>
+                        <th>Suggested Role</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in users">
+                        <td>{{user.LastName}}</td>
+                        <td>{{user.FirstName}}</td>
+                        <td>{{user.Email}}</td>
+                        <td>{{user.RequestedRoleName}}</td>
+                        <td>
+                            <button class="btn btn-primary" ng-click="openUserDetailModal(user.Id)">Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/ng-template" id="UserDetailModal.html">
+        <div class="modal-header">
+            <h3 class="modal-title">User Details</h3>
+        </div>
+        <form name="form.selectedUser" novalidate>
+            <div class="modal-body">
+                <input type="hidden" ng-model="selectedUser.Id" />
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input name="LastName" type="text" ng-model="selectedUser.LastName" class="form-control" required maxlength="25"/>
+                    <p ng-show="form.selectedUser.LastName.$invalid && !form.selectedUser.LastName.$pristine" class="help-block">Last Name is required.</p>
+                </div>
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input name="FirstName" type="text" ng-model="selectedUser.FirstName" class="form-control" required maxlength="15"/>
+                    <p ng-show="form.selectedUser.FirstName.$invalid && !form.selectedUser.FirstName.$pristine" class="help-block">First Name is required.</p>
+                </div>
+                <div class="form-group">
+                    <label>Grade Level</label>
+                    <select class="form-control" ng-model="selectedUser.GradeLevel" ng-options="grade.GradeLevelShort for grade in grades"></select>
+                </div>
+                <div class ="form-group">
+                    <label>Role</label>
+                    <div ng-repeat="role in roles">
+                        <label>
+                            <input type="checkbox" ng-model="role.isSelected" />{{role.RoleName}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()" ng-disabled="form.selectedUser.$invalid">Save</button>
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
+        </form>
+    </script>
+</div>
+
+@section scripts
+{
+
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+    <script>
+        var app = angular.module('unassignedUsersModule', ['ui.bootstrap']);
+        app.factory('adminAPI', function($http) {
+            var factory = {};
+            var urlUnassignedUsers = '/api/AdminDashboardAPI/';
+            var urlGradeLevels = '/api/GradeLevels/';
+            var urlRoles = '/api/roles/';
+            factory.getAllUnassignedUsers = function() {
+                return $http.get(urlUnassignedUsers);
+            }
+            factory.getUserByID = function(id) {
+                return $http.get(urlUnassignedUsers + id);
+            };
+            factory.updateUserData = function(user) {
+                return $http.post(urlUnassignedUsers, user);
+            }
+            factory.getGradeLevels = function() {
+                return $http.get(urlGradeLevels);
+            }
+            factory.getRoles = function() {
+                return $http.get(urlRoles);
+            }
+            return factory;
+        });
+        app.controller('loadUnassignedUsersController', function($scope, adminAPI, $modal) {
+            $scope.loadUnassignedUsers = function() {
+                adminAPI.getAllUnassignedUsers()
+                    .success(function(data) {
+                        $scope.users = data;
+                    })
+                    .error(function(data, status) {
+                        alert(data + ": " + status);
+                    });
+            }
+
+            $scope.openUserDetailModal = function(id) {
+                adminAPI.getUserByID(id)
+                    .success(function(data) {
+                        var updateModal = $modal.open({
+                            templateUrl: 'UserDetailModal.html',
+                            controller: 'updateModalController',
+                            resolve: {
+                                selectedUser: function() {
+                                    return data;
+                                }
+
+                            }
+                        });
+                        updateModal.result.then(function() {
+                            $scope.loadUnassignedUsers();
+                        });
+                    })
+                    .error(function(data, status) {
+                        alert(data + ': ' + status);
+                    });
+
+            };
+            $scope.loadUnassignedUsers();
+        });
+
+        app.controller('updateModalController', function($scope, $modalInstance, adminAPI, selectedUser) {
+            $scope.selectedUser = selectedUser;
+
+            $scope.ok = function() {
+                var SelectedRoles = [];
+                for (var i = 0; i < $scope.roles.length; i++) {
+                    if ($scope.roles[i].isSelected)
+                        SelectedRoles.push($scope.roles[i].RoleID);
+                }
+
+                $scope.selectedUser.SelectedRoles = SelectedRoles;
+                adminAPI.updateUserData($scope.selectedUser)
+                    .success(function() {
+                        $modalInstance.close();
+                    })
+                    .error(function(data, status) {
+                    alert(data + ": " + status);
+                });
+            }
+            $scope.cancel = function() {
+                $modalInstance.dismiss('cancel');
+
+            }
+            $scope.createGradeLevelDropdown = function() {
+                adminAPI.getGradeLevels()
+                    .success(function(data) {
+                        $scope.grades = data;
+                    })
+                    .error(function(data, status) {
+                        alert(data + ": " + status);
+                    });
+            }
+            $scope.createGradeLevelDropdown();
+
+            $scope.createRoleCheckboxes = function() {
+                adminAPI.getRoles()
+                    .success(function(data) {
+                        $scope.roles = data;
+                    })
+                    .error(function(data, status) {
+                        alert(data + ": " + status);
+                    });
+            }
+            $scope.createRoleCheckboxes();
+        });
+    </script>
+
+}

@@ -1,0 +1,9 @@
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.Tests.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.Tests.pdb
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.BLL.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\StringCalculatorKata.BLL.pdb
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.Tests\obj\Debug\StringCalculatorKata.Tests.pdb

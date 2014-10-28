@@ -1,0 +1,6 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\bin\Debug\BattleShip.UI.exe.config
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\bin\Debug\BattleShip.UI.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\bin\Debug\BattleShip.UI.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\obj\Debug\BattleShip.UI.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\obj\Debug\BattleShip.UI.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\BattleShip\BattleShip.UI\obj\Debug\BattleShip.UI.pdb

@@ -1,0 +1,5 @@
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.BLL\bin\Debug\StringCalculatorKata.BLL.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.BLL\bin\Debug\StringCalculatorKata.BLL.pdb
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.BLL\obj\Debug\StringCalculatorKata.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.BLL\obj\Debug\StringCalculatorKata.BLL.dll
+C:\Users\Apprentice\Documents\Visual Studio 2013\Projects\StringCalculatorKata\StringCalculatorKata.BLL\obj\Debug\StringCalculatorKata.BLL.pdb

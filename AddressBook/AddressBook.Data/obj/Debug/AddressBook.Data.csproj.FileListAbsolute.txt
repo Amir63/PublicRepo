@@ -1,0 +1,7 @@
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\bin\Debug\AddressBook.Data.dll
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\bin\Debug\AddressBook.Data.pdb
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\bin\Debug\AddressBook.Models.dll
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\bin\Debug\AddressBook.Models.pdb
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\obj\Debug\AddressBook.Data.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\obj\Debug\AddressBook.Data.dll
+C:\Users\Apprentice\Desktop\Repositories\AmirGill\AddressBook\AddressBook.Data\obj\Debug\AddressBook.Data.pdb

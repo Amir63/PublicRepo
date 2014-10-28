@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff84051cabe2423f878bae281b530c7c" Name="Diagram1">
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.AspNetRole" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.AspNetUser" Width="1.5" PointX="8" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.Course" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.CourseAssignment" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.CourseAssignmentRoster" Width="1.5" PointX="12.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.CourseRoster" Width="1.5" PointX="10.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.GradeLevel" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.RequestedRole" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.SubjectArea" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SelectFromDatabaseModel.UserInfo" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_Course_CourseID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_Course_CourseID2" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_GradeLevel_GradeLevelID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_SubjectArea_SubjectAreaID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_UserInfo_UserInfoID2" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_CourseAssignment_CourseAssignmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_CourseRoster_CourseRosterID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_UserInfo_UserInfoID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.FK_RequestedRoles_RequestedRoleID" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="SelectFromDatabaseModel.ParentStudent" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

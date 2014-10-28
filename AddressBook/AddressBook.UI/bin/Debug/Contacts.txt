@@ -1,0 +1,11 @@
+id,firstname,latname,salutation,phonenumbertype,countrycode,phonenumber,extension,street1,street2,city,state,zip,country,county,addresstype,emailtype,emailaddress,website,notes,
+3,Rye,,,Other,,,,,,,,,,,,,,,
+5,Rye1,,,Other,44,074103405034,,,,,,,,,,,,,
+6,Test3,TesterLast3,,Other,,,,,,,,,,,,,,,
+7,Test4,Last4,,Other,,,,,,,,,,,,,,,
+8,Test5,Last5,,Mobile,77,23402340234,x5234,,,,,,,,,,,,Notes5
+9,Amir,Gill,Mr.,Mobile,1,216-307-4350,,401 South Main Street,,Akron,OH,44313,U.S.,,,Home,amirgill63@hotmail.com,,
+10,xmlOutputTest,testtest,,Other,,,,,,,,,,,,,,,XmlOutpuitTesntNote
+0,,,,Mobile,,,,,,,,,,,,,,,
+11,WednesdayMorningUser,,,Other,,,,,,,,,,,,,,,
+12,Wednesday2,,,Other,,,,,,,,,,,,,,,
